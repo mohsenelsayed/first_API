@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "477934f1-99e6-4f7a-97ab-2a51f4e1d8a5",
+		"name": "task02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4444/members",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members"
+					]
+				},
+				"description": "Lists all existent members"
+			},
+			"response": []
+		},
+		{
+			"name": "search member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4444/members/member/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"member",
+						"1"
+					]
+				},
+				"description": "Searching for existent member by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "search member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4444/members/member/3",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"member",
+						"3"
+					]
+				},
+				"description": "Searching for non existent member"
+			},
+			"response": []
+		},
+		{
+			"name": "adding member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"name\": \"Medhat\",\n\t\"email\": \"medhat@medhat.net\",\n\t\"mobile\": \"0123344678\",\n\t\"committee\": \"Events\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4444/members/new",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"new"
+					]
+				},
+				"description": "Adding a new member with unique ID"
+			},
+			"response": []
+		},
+		{
+			"name": "adding member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"Zaza\",\n\t\"email\": \"zaza@zaza.com\",\n\t\"mobile\": \"0123456789\",\n\t\"committee\": \"Training\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4444/members/new",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"new"
+					]
+				},
+				"description": "Adding a member with duplicated ID"
+			},
+			"response": []
+		},
+		{
+			"name": "modify member",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"Name\": \"Mohsen\",\n\t\"email\": \"m7ame7o@m7ame7o.net\",\n\t\"mobile\": \"0231233463\",\n\t\"committee\": \"Technical\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4444/members/modify",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"modify"
+					]
+				},
+				"description": "Modifying member data"
+			},
+			"response": []
+		},
+		{
+			"name": "delete member",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:4444/members/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"delete"
+					]
+				},
+				"description": "Deleting a member"
+			},
+			"response": []
+		},
+		{
+			"name": "delete member",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 20\n}"
+				},
+				"url": {
+					"raw": "localhost:4444/members/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"members",
+						"delete"
+					]
+				},
+				"description": "delete member mosh mawgud"
+			},
+			"response": []
+		}
+	]
+}

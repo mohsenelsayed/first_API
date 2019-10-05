@@ -1,0 +1,19 @@
+{
+  "name": "task02",
+  "version": "1.0.0",
+  "description": "task02 - creating RESTful API with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mohsenelsayed",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.11",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}

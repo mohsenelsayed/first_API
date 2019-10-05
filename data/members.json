@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "name": "Mohsen",
+    "email": "mohsen@mohsen.net",
+    "mobile": "0123456789",
+    "committee": "Technical"
+  },
+  {
+    "id": "2",
+    "name": "Ahmed",
+    "email": "ahmed@ahmed.net",
+    "mobile": "0123456789",
+    "committee": "Technical"
+  }
+]
